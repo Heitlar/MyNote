@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9165528320289DD000F29CF5 /* MyNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9165528120289DD000F29CF5 /* MyNote.xcdatamodeld */; };
+		91CFD1C32036F2B900A4EFF2 /* MyNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91CFD1C12036F2B900A4EFF2 /* MyNote.xcdatamodeld */; };
 		91E134972022F4DA003C6FAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E134962022F4DA003C6FAA /* AppDelegate.swift */; };
 		91E134992022F4DA003C6FAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E134982022F4DA003C6FAA /* ViewController.swift */; };
 		91E1349C2022F4DA003C6FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E1349A2022F4DA003C6FAA /* Main.storyboard */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9165528220289DD000F29CF5 /* MyNote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyNote.xcdatamodel; sourceTree = "<group>"; };
+		91CFD1C22036F2B900A4EFF2 /* MyNote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyNote.xcdatamodel; sourceTree = "<group>"; };
 		91E134932022F4DA003C6FAA /* MyNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E134962022F4DA003C6FAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E134982022F4DA003C6FAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		91E134AF2022F977003C6FAA /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				9165528120289DD000F29CF5 /* MyNote.xcdatamodeld */,
+				91CFD1C12036F2B900A4EFF2 /* MyNote.xcdatamodeld */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -167,9 +167,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				91E134992022F4DA003C6FAA /* ViewController.swift in Sources */,
+				91CFD1C32036F2B900A4EFF2 /* MyNote.xcdatamodeld in Sources */,
 				91E134AC2022F5F1003C6FAA /* TitleTableViewController.swift in Sources */,
 				91E134972022F4DA003C6FAA /* AppDelegate.swift in Sources */,
-				9165528320289DD000F29CF5 /* MyNote.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,12 +356,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		9165528120289DD000F29CF5 /* MyNote.xcdatamodeld */ = {
+		91CFD1C12036F2B900A4EFF2 /* MyNote.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				9165528220289DD000F29CF5 /* MyNote.xcdatamodel */,
+				91CFD1C22036F2B900A4EFF2 /* MyNote.xcdatamodel */,
 			);
-			currentVersion = 9165528220289DD000F29CF5 /* MyNote.xcdatamodel */;
+			currentVersion = 91CFD1C22036F2B900A4EFF2 /* MyNote.xcdatamodel */;
 			path = MyNote.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

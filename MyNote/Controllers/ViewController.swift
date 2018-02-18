@@ -51,7 +51,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     func loadText() {
         let request : NSFetchRequest<Title> = Title.fetchRequest()
-        let predicate = NSPredicate(format: "parentTitle.name MATCHES %@", note!.name!)
+        let predicate = NSPredicate(format: "name CONTAINS %@", note!.name!)
         request.predicate = predicate
         do {
             notes = try context.fetch(request)
