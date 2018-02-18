@@ -67,7 +67,7 @@ class TitleTableViewController: UITableViewController {
             let textField = alert.textFields![0]
             let newTitle = Title(context: self.context)
             newTitle.name = textField.text!
-            newTitle.text = ""
+            newTitle.text = "text"
             
             self.titles.append(newTitle)
             self.saveTitle()

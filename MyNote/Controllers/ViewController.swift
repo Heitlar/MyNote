@@ -19,19 +19,23 @@ class ViewController: UIViewController, UITextViewDelegate {
     var note: Title? {
         didSet {
             self.loadText()
+//            textView.text = note!.text!
+//            print(note!.name!)
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.delegate = self
-        print(index)
+        textView.text = note!.text!
     }
 
     func textViewDidEndEditing(_ textView: UITextView) {
         let newNote = Title(context: context)
+        newNote.name = note!.name!
         newNote.text = textView.text
         notes[index].text = newNote.text
+        notes[index].name = newNote.name
         saveText()
         
     }
@@ -51,14 +55,23 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     func loadText() {
         let request : NSFetchRequest<Title> = Title.fetchRequest()
-        let predicate = NSPredicate(format: "name CONTAINS %@", note!.name!)
-        request.predicate = predicate
+//        let predicate = NSPredicate(format: "name CONTAINS %@", note!.name!)
+//        request.predicate = predicate
         do {
             notes = try context.fetch(request)
-            textView.text = notes[index].text
+//            textView.text = notes[index].text
+            print(notes[index].text!)
         } catch {
             print("Error loading note text \(error)")
         }
     }
+    
+//    func editText() {
+//        do {
+//            context.updatedObjects.
+//        } catch {
+//            print("Error editing text \(error)")
+//        }
+//    }
 }
 
